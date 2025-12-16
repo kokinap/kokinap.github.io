@@ -16,6 +16,7 @@
     --booty-green-500: #7fd6bc; /* hover */
   --booty-green-600: #66c9aa; /* active */
   --font-family: "Montserrat", sans-serif;
+  --Inter: "Inter", sans-serif;
 }
 .navbar-mobile {
   display: none;
@@ -39,6 +40,7 @@
 }
 .swap {
   max-width: 100% !important;
+  margin-top: 100px;
 }
 html,
 body {
@@ -63,7 +65,7 @@ nav ul li a,
   font-size: 16px;
 }
 nav ul li a{
-  font-family: "Inter", sans-serif;
+  font-family: var(--Inter);
   font-size: 14px;
 
 }
@@ -101,7 +103,7 @@ header {
 .lang-switch {
   display: flex;
   align-items: center;
-  margin-right: 32px;
+  margin-right: 64px;
   gap: 8px;
 }
 .mybooty .logo {
@@ -132,6 +134,7 @@ header {
 .socials {
   margin-left: 32px;
   min-width: 64px;
+  margin-right: 64px;
 }
 .split {
   display: flex;
@@ -151,7 +154,7 @@ header {
 .body-big {
   font-size: 20px;
   line-height: 150%;
-  max-width: 920px;
+  max-width: 950px;
   margin-bottom:48px ;
 }
 .btn-about, .live-workout .btn {
@@ -248,6 +251,7 @@ header {
 .text {
   max-width: 560px;
   color: #5f6265;
+  font-family: var(--Inter);
 }
 .challenge .down {
   display: flex;
@@ -281,7 +285,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-left: 160px;
 }
 .joinUs .right {
   width: 60%;
@@ -358,6 +363,7 @@ header {
 }
 .live-workout h2 span {
   font-family: "Gistesy", sans-serif;
+  font-weight: normal;
 }
 .live-workout p {
   color: var(--text-1000);
@@ -382,7 +388,7 @@ header {
   margin: 0 20vw 0;
   padding-left: 16px;
   min-height: 350px;
-  font-family: "Inter", sans-serif;
+  font-family: var(--Inter);
 }
 
 .faq-left h2 {
@@ -423,10 +429,16 @@ header {
 }
 
 .faq-right .plus {
-  font-size: 32px;
+  font-size: 20px;
   transition: transform 0.2s ease;
+  font-weight: normal;
 }
-
+.faq-right .plus:hover{
+  font-weight: 600;
+}
+.faq-right .plus:active{
+  font-weight: 800;
+}
 .faq-right details[open] .plus {
   transform: rotate(45deg);
 }
@@ -434,7 +446,8 @@ header {
 .faq-right p {
   margin-top: 16px;
   max-width: 600px;
-  color: var(--text-700);
+  color: #5F6265;
+  font-family: var(--Inter);
   font-size: 14px;
   line-height: 160%;
 }
