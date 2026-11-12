@@ -246,7 +246,7 @@ header {
   margin-bottom: 72px;
 }
 .challenge p {
-  color: var(--text-700);
+  color: #5f6265;
 }
 .text {
   max-width: 560px;
