@@ -232,6 +232,7 @@ header {
 .about .right p {
   color: #5f6265;
 }
+
 .challenge h2 {
   font-size: 42px;
   line-height: 130%;
@@ -247,6 +248,7 @@ header {
 }
 .challenge p {
   color: #5f6265;
+  line-height: 120%;
 }
 .text {
   max-width: 560px;
@@ -506,6 +508,9 @@ details li {
   color: var(--text-700);
   font-size: 14px;
 }
+.subtext{
+  font-family: var(--Inter);
+}
 @media only screen and (max-width: 600px) {
   .navbar-desktop {
     display: none;
@@ -714,6 +719,7 @@ details li {
   }
   .challenge{
     margin-left: 16px;
+    margin-right: 16px;
   }
   .challenge .up h2 {
     font-size: 32px;
